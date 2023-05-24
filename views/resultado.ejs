@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resultado del Certificado</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div id="resultado">
+    <% if (certificadoNoEncontrado) { %>
+      <h2>Certificado No Encontrado</h2>
+    <% } else { %>
+      <h2>Certificado Válido:</h2>
+      <p>Identificador: <%= certificado.identificador %></p>
+      <p>Nombre Titular: <%= certificado.nombre_titular %></p>
+      <p>Fecha Emisión: <%= certificado.fecha_emision %></p>
+      <!-- Agrega aquí más campos del certificado si los tienes -->
+    <% } %>
+
+    <a href="index.html" class="boton-regresar">Regresar</a>
+  </div>
+</body>
+</html>

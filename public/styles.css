@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slide-up 1s ease-in-out;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #resultado {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slide-up 1s ease-in-out;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  .boton-regresar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  .boton-regresar:hover {
+    background-color: #45a049;
+    animation: pulse 0.5s infinite;
+  }
+  
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slide-up {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  

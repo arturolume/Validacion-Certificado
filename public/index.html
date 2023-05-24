@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validador de Certificado</title>
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    .mensaje-error {
+      display: none;
+      color: red;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Validador de Certificado</h1>
+  <form action="/validar" method="GET">
+    <label for="identificador">Identificador:</label>
+    <input type="text" id="identificador" name="identificador" required>
+    <button type="submit">Validar</button>
+  </form>
+  
+  <div id="resultado">
+    <p id="mensaje-error" class="mensaje-error">Certificado no encontrado</p>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const certificadoNoEncontrado = urlParams.get('certificadoNoEncontrado');
+    const mensajeError = document.getElementById('mensaje-error');
+
+    if (certificadoNoEncontrado === 'true') {
+      mensajeError.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
